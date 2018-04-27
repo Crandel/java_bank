@@ -1,4 +1,4 @@
-package com.test.banktest;
+package com.banktest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
