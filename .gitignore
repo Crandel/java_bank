@@ -9,6 +9,7 @@
 .settings
 .springBeans
 .sts4-cache
+secret.properties
 
 ### IntelliJ IDEA ###
 .idea
