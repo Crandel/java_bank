@@ -1,9 +1,9 @@
 package com.banktest.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 
 @Entity
@@ -14,6 +14,14 @@ public class User {
 
     private String firstName;
     private String lastName;
+
+
+    @OneToMany
+    private final List<Role> roles = new ArrayList<>();
+
+    public Collection<Role> getRoles() {
+        return roles;
+    }
 
     public User(String firstName, String lastName ) {
         this.firstName = firstName;

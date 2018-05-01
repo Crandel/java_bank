@@ -23,16 +23,4 @@ public class BankTestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BankTestApplication.class, args);
 	}
-
-	@Bean
-	public CommandLineRunner demo() {
-		return (args) -> {
-
-			// fetch all customers
-			log.info("List of Args");
-			log.info(args.toString());
-			log.info("Server port {} and db url {}", server_port, database_url);
-			log.info("-------------------------------");
-		};
-	}
 }
